@@ -11,7 +11,7 @@ using std::thread;
 int main()
 {
     std::vector<std::thread> boidThreads;
-	for(int i=0; i<10; i++)	{
+	for(int i = 0; i < 10; i++)	{
 		boidThreads.push_back( std::thread{Boid{}} );
 	}
     // Now wait for all the worker thread to finish i.e.
